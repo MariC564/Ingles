@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entrenamiento deportivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+   
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="logo"src="img/logo.png" style="margin-left: 30px; width: 90px;"alt=""></a>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" id="navlis" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navlis" href="vocabulario.php">Vocabulary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navlis" href="Actividad.php">Activities</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <!-- Cuerpo de la pagina (Carusel) -->
+      <div class="container-carrusel">
+      <main>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/atle.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/fut.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/vole.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/bas.avif" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <!--overlay-->
+              <div class="overlay">
+                <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 offset-lg-6 text-md-end text-center" >
+                    <h1>SPORTS TRAINIG</h1>
+                    <p class="d-none d-md-block ">...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+<!--card-->
+
+<div class="container">
+  <div class="card">
+      <figure>
+          <img class="imagen" src="img/voca.svg" alt="">
+      </figure>
+      <div class="contenido">
+          <h3>Vocabulary</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing </p>
+          <a href="Vocabulario.php">See more</a>
+      </div>
+  </div>
+
+  <div class="card">
+      <figure>
+          <img class="imagen" src="img/activi.svg" alt="">
+      </figure>
+      <div class="contenido">
+          <h3>Didactic activities</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing </p>
+          <a href="Actividad.php">See more</a>
+      </div>
+  </div>
+</div>
+        
+        <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">
+          <img src="images/inbotloo.png" alt="">What do you need?
+          <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+      </button>
+
+      <div class="content">
+          <div class="full-chat-block">
+              <!-- Message Container -->
+              <div class="outer-container">
+                  <div class="chat-container">
+                      <!-- Messages -->
+                      <div id="chatbox">
+                          <h5 id="chat-timestamp"></h5>
+                          <p id="botStarterMessage" class="botText"><span>Loanding...</span></p>
+                      </div>
+
+                      <!-- User input box -->
+                      <div class="chat-bar-input-block">
+                          <div id="userInput">
+                              <input id="textInput" class="input-box" type="text" name="msg"
+                                  placeholder="Ingrese su mensaje">
+                              <p></p>
+                          </div>
+
+                          <div class="chat-bar-icons">
+                              <i id="chat-icon" style="color: #4cc9f0;" class="fa fa-fw fa-heart"
+                                  onclick="heartButton()"></i>
+                              <i id="chat-icon" style="color: #444941;" class="fa fa-fw fa-send"
+                                  onclick="sendButton()"></i>
+                          </div>
+                      </div>
+
+                      <div id="chat-bar-bottom">
+                          <p></p>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+  </div>
+<!-- footer -->
+<footer>
+  <div class="footerContainer">
+      <div class="footerNav">
+          <ul><li><a href="index.html">Home</a></li>
+              <li><a href="Vocabulario.php">Vocabulary</a></li>
+              <li><a href="Actividad.php">Activities</a></li>
+            
+          </ul>
+      </div>
+  </div>
+  <div class="footerBottom">
+      <p>Copyright &copy;2024; Designed by <span class="designer">Sports</span></p>
+  </div>
+</footer>
+<!-- footer -->
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="scripts/chat.js"></script>
+<script src="scripts/responses.js"></script>
+
+</html>
